@@ -2,7 +2,7 @@ streamlit
 scikit-learn
 joblib
 requests
-spacy
 yfinance
 transformers
-en-core-web-sm @ https://github.com/explosion/spacy-models/releases/download/en_core_web_sm-3.7.1/en_core_web_sm-3.7.1.tar.gz
+spacy==3.5.4
+https://files.pythonhosted.org/packages/1d/47/4fa2e6d3e054313ed0a8202ebccca1d7ab18d3ad93e1a034f3a7fc99d0d7/en_core_web_sm-3.5.0-py3-none-any.whl
