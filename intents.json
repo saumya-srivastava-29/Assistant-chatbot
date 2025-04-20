@@ -1,0 +1,67 @@
+[
+  {
+    "intent": "greeting",
+    "examples": [
+      "hi", "hello", "hey", "good morning", "how are you", "hey assistant"
+    ]
+  },
+  {
+    "intent": "goodbye",
+    "examples": [
+      "bye", "see you", "talk to you later", "good night", "farewell"
+    ]
+  },
+  {
+    "intent": "thanks",
+    "examples": [
+      "thank you", "thanks", "appreciate it", "cheers"
+    ]
+  },
+  {
+    "intent": "coin_flip",
+    "examples": [
+      "flip a coin", "toss a coin", "heads or tails", "coin toss", "flip", "can you flip a coin", "give me heads or tails"
+    ]
+  },
+  {
+    "intent": "tell_joke",
+    "examples": [
+    "tell me a joke", "make me laugh", "funny joke", "joke please", "say something funny", "give me a joke"
+    ]
+  },
+  {
+    "intent": "motivational_quote",
+    "examples": [
+      "motivate me", "give me motivation", "say something inspiring",
+      "tell me something motivational", "boost me up", "I need a pep talk"
+    ]
+  },
+  {
+    "intent": "get_weather",
+    "examples": [
+      "what's the weather", "weather in delhi", "weather in rome",
+      "how's the weather", "paris", "new york", "is it raining",
+      "london", "tokyo", "weather update"
+    ]
+  },
+  {
+    "intent": "get_stock_price",
+    "examples": [
+      "stock price of apple", "how is tesla stock", "check msft",
+      "get amazon stock", "google stock update", "stock market"
+    ]
+  },
+  {
+    "intent": "get_news",
+    "examples": [
+      "latest news", "what's in the news", "news update",
+      "tech news today", "today's headlines", "show me the news"
+    ]
+  },
+  {
+    "intent": "unknown",
+    "examples": [
+      "what is love", "how old is the moon", "can you dance", "what do you know"
+    ]
+  }
+]
