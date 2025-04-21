@@ -18,7 +18,7 @@ def predict_intent(text):
 
 # Set up page
 st.set_page_config(page_title="Assitant Chatbot", layout="centered")
-st.title("🤖 LLM-Powered Chatbot")
+st.title("🤖 Assistant Chatbot")
 
 st.markdown(
     "Hi! I'm your smart assistant. I can help you with:\n"
