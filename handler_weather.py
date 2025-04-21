@@ -1,10 +1,6 @@
 import requests
 import spacy
-
-def get_nlp():
-    return spacy.load("en_core_web_sm")
-
-
+from app import get_nlp
 
 def extract_city(text):
     doc = nlp(text)
