@@ -1,6 +1,7 @@
 import requests
 import spacy
-from app import get_nlp
+from nlp_utils import get_nlp
+
 
 def extract_city(text):
     doc = nlp(text)
