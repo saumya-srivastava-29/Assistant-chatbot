@@ -2,8 +2,14 @@ import importlib.util
 import subprocess
 import spacy
 
+_nlp = None  # Cache variable
+
 def get_nlp():
-    # Auto-download the model if not available
-    if not importlib.util.find_spec("en_core_web_sm"):
-        subprocess.run(["python", "-m", "spacy", "download", "en_core_web_sm"])
-    return spacy.load("en_core_web_sm")
+    global _nlp
+    if _nlp is None:
+        try:
+            _nlp = spacy.load("en_core_web_sm")
+        except OSError:
+            subprocess.run(["python", "-m", "spacy", "download", "en_core_web_sm"])
+            _nlp = spacy.load("en_core_web_sm")
+    return _nlp
