@@ -4,6 +4,14 @@ from handlers import route_intent
 from intent_classifier import predict_intent
 from handler_news import fetch_news
 from handler_stock import handle_get_stock_price
+import spacy
+import subprocess
+import importlib.util
+
+# Auto-download model if not present
+if not importlib.util.find_spec("en_core_web_sm"):
+    subprocess.run(["python", "-m", "spacy", "download", "en_core_web_sm"])
+nlp = spacy.load("en_core_web_sm")
 
 # Load model
 model = joblib.load("intent_model.pkl")
@@ -78,3 +86,5 @@ if submitted and user_input:
     else:
         response = route_intent(intent, user_input)
         st.write("Bot:", response)
+
+
