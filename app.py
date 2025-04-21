@@ -6,8 +6,6 @@ from handler_news import fetch_news
 from handler_stock import handle_get_stock_price
 from nlp_utils import get_nlp
 
-# Ensure spaCy model is downloaded at app startup
-get_nlp()
 
 
 # Load model
