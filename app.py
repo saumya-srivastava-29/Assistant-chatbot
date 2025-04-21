@@ -5,15 +5,16 @@ from intent_classifier import predict_intent
 from handler_news import fetch_news
 from handler_stock import handle_get_stock_price
 def get_nlp():
- import spacy
- import subprocess
- import importlib.util
+    import importlib.util
+    import subprocess
+    import spacy
 
-# Auto-download model if not present
-if not importlib.util.find_spec("en_core_web_sm"):
-    subprocess.run(["python", "-m", "spacy", "download", "en_core_web_sm"])
+  
+    if not importlib.util.find_spec("en_core_web_sm"):
+        subprocess.run(["python", "-m", "spacy", "download", "en_core_web_sm"])
 
-return spacy.load("en_core_web_sm")
+    return spacy.load("en_core_web_sm")
+
 # Load model
 model = joblib.load("intent_model.pkl")
 vectorizer = joblib.load("vectorizer.pkl")
