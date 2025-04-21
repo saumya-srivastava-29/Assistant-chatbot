@@ -4,6 +4,11 @@ from handlers import route_intent
 from intent_classifier import predict_intent
 from handler_news import fetch_news
 from handler_stock import handle_get_stock_price
+from nlp_utils import get_nlp
+
+# Ensure spaCy model is downloaded at app startup
+get_nlp()
+
 
 # Load model
 model = joblib.load("intent_model.pkl")
