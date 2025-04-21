@@ -5,9 +5,9 @@ from intent_classifier import predict_intent
 from handler_news import fetch_news
 from handler_stock import handle_get_stock_price
 def get_nlp():
-import spacy
-import subprocess
-import importlib.util
+ import spacy
+ import subprocess
+ import importlib.util
 
 # Auto-download model if not present
 if not importlib.util.find_spec("en_core_web_sm"):
