@@ -1,0 +1,7 @@
+[server]
+headless = true
+enableCORS = false
+port = $PORT
+
+[runner]
+postScript = "bash setup.sh"
