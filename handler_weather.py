@@ -4,6 +4,7 @@ from nlp_utils import get_nlp
 
 
 def extract_city(text):
+    nlp = get_nlp() 
     doc = nlp(text)
     for ent in doc.ents:
         if ent.label_ == "GPE":
