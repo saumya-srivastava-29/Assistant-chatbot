@@ -17,7 +17,7 @@ def predict_intent(text):
     return model.predict(X)[0]
 
 # Set up page
-st.set_page_config(page_title="LLM Chatbot", layout="centered")
+st.set_page_config(page_title="Assitant Chatbot", layout="centered")
 st.title("🤖 LLM-Powered Chatbot")
 
 st.markdown(
