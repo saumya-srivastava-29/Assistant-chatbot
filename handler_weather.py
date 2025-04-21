@@ -1,7 +1,8 @@
 import requests
 import spacy
 
-nlp = spacy.load("en_core_web_sm")
+def get_nlp():
+    return spacy.load("en_core_web_sm")
 
 
 
